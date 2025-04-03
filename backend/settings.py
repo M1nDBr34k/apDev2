@@ -132,4 +132,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # React Localhost
     "https://your-frontend-domain.com",  # Add your deployed frontend URL
+    "https://willowy-valkyrie-d554d1.netlify.app",
+    "https://apdev2.onrender.com",  # Add your deployed frontend URL
 ]

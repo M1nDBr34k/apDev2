@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'rest_framework.authtoken',
     'todo',
 ]
 
@@ -136,3 +137,13 @@ CORS_ALLOWED_ORIGINS = [
     "https://willowy-valkyrie-d554d1.netlify.app",
     "https://apdev2.onrender.com",  # Add your deployed frontend URL
 ]
+
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+    ],
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ],
+}
